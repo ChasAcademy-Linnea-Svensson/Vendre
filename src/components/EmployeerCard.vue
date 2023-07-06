@@ -10,7 +10,9 @@ const props = defineProps({
 
 <template>
   <div class="card">
-    <img :src="employeer.avatar" alt="" />
+    <div class="image-container">
+      <img :src="employeer.avatar" alt="" />
+    </div>
     <h3>{{ employeer.first_name + ' ' + employeer.last_name }}</h3>
     <RouterLink :to="`/employees/${employeer.id}`">Contact</RouterLink>
   </div>
@@ -18,7 +20,7 @@ const props = defineProps({
 
 <style scoped>
 .card {
-  background-color: #cdcdcd;
+  background-color: #fff;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -26,9 +28,19 @@ const props = defineProps({
   gap: 1rem;
   flex-direction: column;
   padding: 1rem;
-  width: 12rem;
+  width: 14rem;
+}
+.image-container {
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 img {
-  border-radius: 50%;
+  height: 8rem;
+  width: auto;
 }
 </style>
