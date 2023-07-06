@@ -13,7 +13,7 @@ import VendreHeader from './components/VendreHeader.vue';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   background-color: #f1effd;

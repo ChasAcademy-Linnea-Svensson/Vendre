@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import Button from './Button.vue';
 const showHamburgerMenu = ref(false);
 const ham = document.getElementById('#menu');
 
@@ -11,24 +12,29 @@ const handleHamburgerMenu = () => {
 <template>
   <header>
     <nav>
-      <RouterLink to="/employees">
+      <RouterLink to="/">
         <img src="../assets/logo.webp" alt="Vendre logo" />
       </RouterLink>
-      <ul v-if="showHamburgerMenu === true" id="menu" class="hamburger-ul">
-        <li>PRODUKT</li>
-        <li>PARTNERS</li>
-        <li>PRISER</li>
-        <li>KUNDCASE</li>
-        <li>KUNSKAP</li>
-        <li>MEDARBETARE</li>
+      <ul
+        v-if="showHamburgerMenu === true"
+        id="menu"
+        class="hamburger-ul"
+        @click="handleHamburgerMenu"
+      >
+        <RouterLink to="/">PRODUKT</RouterLink>
+        <RouterLink to="/">PARTNERS</RouterLink>
+        <RouterLink to="/">PRISER</RouterLink>
+        <RouterLink to="/">KUNDCASE</RouterLink>
+        <RouterLink to="/">KUNSKAP</RouterLink>
+        <RouterLink to="/employees">MEDARBETARE</RouterLink>
       </ul>
       <ul class="normal-ul">
-        <li>Produkt</li>
-        <li>Partners</li>
-        <li>Priser</li>
-        <li>Kundcase</li>
-        <li>Kunskap</li>
-        <li>Medarbetare</li>
+        <RouterLink to="/">Produkt</RouterLink>
+        <RouterLink to="/">Partners</RouterLink>
+        <RouterLink to="/">Priser</RouterLink>
+        <RouterLink to="/">Kundcase</RouterLink>
+        <RouterLink to="/">Kunskap</RouterLink>
+        <RouterLink to="/employees">Medarbetare</RouterLink>
       </ul>
       <div class="button-container">
         <font-awesome-icon icon="fa-solid fa-globe" class="icon" />
@@ -46,7 +52,9 @@ const handleHamburgerMenu = () => {
           @Click="handleHamburgerMenu"
           class="hamburger-icon"
         />
-        <button class="book-btn">BOKA DEMO</button>
+        <Button :bg="'#000'" :to="'/'" :size="'small'" class="book-btn"
+          >BOKA DEMO</Button
+        >
       </div>
     </nav>
   </header>
@@ -57,8 +65,11 @@ template {
   overflow: hidden;
 }
 header {
-  background-color: #fff;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   max-height: 80px;
+  position: sticky;
+  top: 0;
 }
 .icon {
   height: 1.5rem;
@@ -73,8 +84,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2.5rem;
-  position: sticky;
-  top: 0;
 }
 img {
   width: 7rem;
@@ -86,10 +95,11 @@ ul {
   gap: 2.5rem;
   list-style: none;
 }
-li {
+a {
   font-weight: 600;
+  color: #333;
 }
-li:hover {
+a:hover {
   color: #666;
 }
 .button-container {
@@ -117,6 +127,7 @@ li:hover {
   width: 100vw;
   transform: none;
   position: fixed;
+  top: 80px;
   left: 0;
   font-size: 1.5rem;
   align-items: center;

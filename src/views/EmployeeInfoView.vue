@@ -59,4 +59,10 @@ img {
   min-height: 10rem;
   width: auto;
 }
+
+@media screen and (max-width: 992px) {
+  div {
+    width: 95vw;
+  }
+}
 </style>

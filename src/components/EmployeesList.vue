@@ -4,7 +4,7 @@ import EmployeerCard from './EmployeerCard.vue';
 import Pagination from './Pagination.vue';
 const employees = ref([]);
 const paginationPages = ref();
-const currentPage = ref(2);
+const currentPage = ref(1);
 
 const getEmployees = async () => {
   return fetch(`https://reqres.in/api/users?page=${currentPage.value}`).then(
