@@ -43,4 +43,16 @@ img {
   height: 8rem;
   width: auto;
 }
+a {
+  font-weight: 600;
+}
+a:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 772px) {
+  .card {
+    width: 45vw;
+  }
+}
 </style>

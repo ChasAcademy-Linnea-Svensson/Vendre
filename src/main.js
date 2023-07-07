@@ -3,9 +3,14 @@ import { createPinia } from 'pinia';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faGlobe, faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGlobe,
+  faBars,
+  faX,
+  faArrowRight,
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faGlobe, faBars, faX);
+library.add(faGlobe, faBars, faX, faArrowRight);
 
 import App from './App.vue';
 import router from './router';

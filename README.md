@@ -1,29 +1,10 @@
 # Vendre
 
-This template should help get you started developing with Vue 3 in Vite.
+My first attempt at Vue. I tried replicating Vendre's website and also made a page for they employees iwth dummydata.
 
-## Recommended IDE Setup
+## Contact
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Made by Linnéa Svensson
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+My github:
+https://github.com/ChasAcademy-Linnea-Svensson

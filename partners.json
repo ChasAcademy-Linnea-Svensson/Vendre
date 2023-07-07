@@ -1,0 +1,39 @@
+{
+  "affarssystem": [
+    {
+      "id": 1,
+      "name": "Visma",
+      "img": "visma"
+    },
+    {
+      "id": 2,
+      "name": "Pyramid",
+      "img": "assets/partners/pyramid.webp"
+    },
+    {
+      "id": 3,
+      "name": "Business Central",
+      "img": "assets/partners/businesscentral.webp"
+    },
+    {
+      "id": 4,
+      "name": "Monitor",
+      "img": "assets/partners/monitor.webp"
+    },
+    {
+      "id": 5,
+      "name": "Jeeves",
+      "img": "assets/partners/jeeves.webp"
+    },
+    {
+      "id": 6,
+      "name": "Mamut",
+      "img": "assets/partners/mamut.webp"
+    },
+    {
+      "id": 7,
+      "name": "Specter",
+      "img": "assets/partners/specter.webp"
+    }
+  ]
+}

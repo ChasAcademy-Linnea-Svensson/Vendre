@@ -2,7 +2,6 @@
 import { ref } from 'vue';
 import Button from './Button.vue';
 const showHamburgerMenu = ref(false);
-const ham = document.getElementById('#menu');
 
 const handleHamburgerMenu = () => {
   showHamburgerMenu.value = !showHamburgerMenu.value;
