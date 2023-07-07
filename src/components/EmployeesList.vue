@@ -14,7 +14,6 @@ const getEmployees = async () => {
         .then(
           (data) => (
             (employees.value = data.data),
-            console.log(employees),
             (paginationPages.value = data.total_pages)
           )
         )

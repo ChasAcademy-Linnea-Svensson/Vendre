@@ -157,6 +157,7 @@ onMounted(() => {
 }
 .partners {
   height: 80vh;
+  overflow: hidden;
   background-color: #fff;
   padding: 10% 12%;
   display: flex;

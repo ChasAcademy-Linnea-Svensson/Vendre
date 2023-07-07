@@ -16,24 +16,27 @@ const handlePageChange = (pageNr) => {
 };
 
 onMounted(() => {
-  document.querySelectorAll('button').forEach((btn, indx) => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('button').forEach((b, i) => {
-        if (i === indx) {
-          b.classList.add('active');
-        } else {
-          b.classList.remove('active');
-        }
+  setTimeout(() => {
+    document.querySelectorAll('button').forEach((button, indx) => {
+      button.addEventListener('click', () => {
+        console.log(button);
+        document.querySelectorAll('button').forEach((btn, i) => {
+          if (i === indx) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
       });
     });
-  });
+  }, 100);
 });
 </script>
 
 <template>
   <ul>
     <li v-for="index in numberOfPages">
-      <button @click="handlePageChange(index)" :class="index === 1 && 'active'">
+      <button :class="index === 1 && 'active'" @click="handlePageChange(index)">
         {{ index }}
       </button>
     </li>
