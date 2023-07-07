@@ -8,3 +8,6 @@ Made by Linnéa Svensson
 
 My github:
 https://github.com/ChasAcademy-Linnea-Svensson
+
+Deployed here:
+https://linnea-svensson-vendre.netlify.app/
