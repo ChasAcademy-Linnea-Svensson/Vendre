@@ -19,7 +19,6 @@ onMounted(() => {
   setTimeout(() => {
     document.querySelectorAll('button').forEach((button, indx) => {
       button.addEventListener('click', () => {
-        console.log(button);
         document.querySelectorAll('button').forEach((btn, i) => {
           if (i === indx) {
             btn.classList.add('active');
